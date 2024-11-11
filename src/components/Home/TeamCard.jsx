@@ -30,38 +30,28 @@ const TeamCard = ({ i }) => {
       transition={{ duration: 0.5, delay: 0 + i / 5 }}
     >
       <div
-        className={`${
-          i % 2 === 0 ? "md:-mt-16" : ""
-        } w-full   group hover-[1.1] md:hover:scale-[1.2] transition-all duration-300  h-[400px] relative text-white rounded-[20px] shadow-2xl bg-secondary`}
+        className={` w-full   group flex flex-col overflow-hidden md:hover:scale-[1] scale-[0.9] transition-all duration-300  h-[400px] relative text-white rounded-[20px] shadow-2xl bg-secondary`}
       >
-        <div className=" flex flex-col  h-full">
-          <Image
-            width={200}
-            height={150}
-            className="rounded-[20px] w-full transition-all ease-in duration-200       object-cover  h-[400px] "
-            src="/assets/team/team-1.svg"
-            alt="team-photo"
-          />
+        <Image
+          width={200}
+          height={150}
+          className=" w-full overflow-hidden transition-all ease-in duration-200       object-cover  h-[400px] "
+          src="/assets/team/1x/team-1.png"
+          alt="team-photo"
+        />
 
-          <div className=" p-6 flex flex-col h-full justify-between">
-            <div className=" ">
-              <h5 className="text-primary  font-bold ">
-                <RevealViolet>Lorem ipsum </RevealViolet>
-              </h5>
+        <div className=" p-6 flex flex-col h-full justify-between">
+          <div className=" ">
+            <h5 className="text-primary  font-bold ">
+              <RevealViolet>Lorem ipsum </RevealViolet>
+            </h5>
 
-              <RevealViolet>
-                <p className="text-[16px]">Lorem ipsum</p>
-              </RevealViolet>
-            </div>
-            <div className="flex w-full flex-col">
-              <div>
-                <p className="text-[8px] ">Lorem ipsum</p>
-              </div>
-              <div className="gap-4  flex text-primary">
-                <Instagram />
-                <SendIcon />
-              </div>
-            </div>
+            <RevealViolet>
+              <p className="text-[16px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+                ex.
+              </p>
+            </RevealViolet>
           </div>
         </div>
       </div>

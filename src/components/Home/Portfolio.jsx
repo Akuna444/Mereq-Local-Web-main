@@ -31,10 +31,10 @@ const Portfolio = () => {
           </Reveal>
         </button>
       </div>
-      <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
+      <div className="grid gap-20 md:gap-5 grid-cols-1 md:grid-cols-3">
         <div
           id="portfolio"
-          className="w-full relative rounded-xl bg-gradient-to-b from-white to-black bg-opacity-20 overflow-hidden h-[400px] md:col-span-2"
+          className="w-full relative rounded-xl bg-gradient-to-b from-white to-black bg-opacity-20 overflow-hidden h-[200px] md:h-[400px] md:col-span-2"
         >
           <Image
             width={400}
@@ -55,11 +55,11 @@ const Portfolio = () => {
 
         <div
           id="portfolio"
-          className="w-full relative bg-gradient-to-b from-white to-black bg-opacity-20 rounded-xl overflow-hidden h-[400px] "
+          className="w-full relative bg-gradient-to-b from-white to-black bg-opacity-20 rounded-xl overflow-hidden h-[200px] md:h-[400px] "
         >
           <Image
-            width={400}
-            height={400}
+            width={1900}
+            height={3100}
             alt="branding-portfolio"
             className="w-full object-cover transition-all duration-500 hover:scale-[1.2] h-full mix-blend-multiply "
             src="/assets/portfolio/branding.jpg"
@@ -75,7 +75,7 @@ const Portfolio = () => {
         </div>
         <div
           id="portfolio"
-          className="w-full relative overflow-hidden bg-gradient-to-b from-white to-black bg-opacity-20 rounded-xl  h-[400px] "
+          className="w-full relative overflow-hidden bg-gradient-to-b from-white to-black bg-opacity-20 rounded-xl  h-[200px] md:h-[400px] "
         >
           <Image
             width={400}
@@ -97,7 +97,7 @@ const Portfolio = () => {
 
         <div
           id="portfolio"
-          className="w-full relative bg-gradient-to-b from-white to-black bg-opacity-20 rounded-xl overflow-hidden h-[400px] md:col-span-2"
+          className="w-full relative bg-gradient-to-b from-white to-black bg-opacity-20 rounded-xl overflow-hidden h-[200px] md:h-[400px] md:col-span-2"
         >
           <Image
             width={400}

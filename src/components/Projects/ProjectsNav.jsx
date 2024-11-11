@@ -1,22 +1,46 @@
 "use client";
 
-import { projectsNav } from "@/data/constants";
+import { projectsList, projectsNav } from "@/data/constants";
 import { useState } from "react";
+import Reveal from "../UI/Animations/Reveal";
 
 const ProjectsNav = () => {
-  const [activeNav, setActiveNav] = useState(1);
+  const [activeNav, setActiveNav] = useState("All");
+  const filteredProject = projectsList.filter(
+    activeNav === "All" ? true : projectsList.category === activeNav
+  );
   return (
-    <div className="section-padding-top md:pl-12 pl-6 ">
-      <div className="flex  justify-end pr-20">
-        <h1 className="text-secondary">Works</h1>
+    <div className="section-padding-top md:pl-12 px-6 ">
+      <div className="flex justify-center  md:justify-end md:pr-20">
+        <Reveal>
+          {" "}
+          <h1 className="text-secondary">Works</h1>
+        </Reveal>
       </div>
-      <div className="flex rounded-l-[20px] text-tertiary  bg-grayDark px-6 py-6 divide-x-2">
+      <Reveal>
+        <div className="hidden md:flex max-sm:rounded-[20px] md:rounded-l-[20px] text-tertiary w-[100vw]  bg-grayDark px-6 py-6 divide-x-2">
+          {projectsNav.map((nav) => (
+            <button onClick={() => setActiveNav(nav.name)} key={nav.id}>
+              {" "}
+              <h5
+                className={`${
+                  activeNav === nav.name ? "font-bold " : ""
+                } px-12`}
+              >
+                {nav.name}{" "}
+              </h5>
+            </button>
+          ))}
+        </div>
+      </Reveal>
+
+      <div className="bg-grayDark rounded-[20px] px-1 py-6 text-tertiary gap-4 justify-center    flex md:hidden flex-wrap w-full h-full section-paddingx">
         {projectsNav.map((nav) => (
           <button onClick={() => setActiveNav(nav.id)} key={nav.id}>
             {" "}
-            <h5 className={`${activeNav === nav.id ? "font-bold " : ""} px-12`}>
-              {nav.name}{" "}
-            </h5>
+            <div className={`${activeNav === nav.id ? "font-bold " : ""} `}>
+              {nav.name}
+            </div>{" "}
           </button>
         ))}
       </div>

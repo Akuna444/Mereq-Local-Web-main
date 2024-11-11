@@ -5,6 +5,20 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    "md:row-span-1",
+    "md:row-span-2",
+    "md:row-span-3",
+    "md:row-span-4",
+    "md:row-span-5",
+    "md:row-span-6",
+    "md:col-span-1",
+    "md:col-span-2",
+    "md:col-span-3",
+    "md:col-span-4",
+    "md:col-span-5",
+    "md:col-span-6",
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -117,6 +131,7 @@ module.exports = {
       },
       boxShadow: {
         glow: "0 0 200px rgba(20, 97, 84, 0.9)",
+        glow2: "0px 0px 33px 3px  #4b366d",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

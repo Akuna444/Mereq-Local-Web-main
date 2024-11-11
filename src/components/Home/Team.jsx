@@ -11,11 +11,12 @@ const Team = () => {
             Meet the team
           </h2>
         </div>
-        <div className="grid transition-all ease-in-out grid-cols-1 md:grid-cols-4 pt-24 pb-8 align-middle gap-16">
+        <div className="grid transition-all ease-in-out grid-cols-1 md:grid-cols-5 pt-24 pb-8 align-middle gap-5">
           <TeamCard i={0} />
           <TeamCard i={1} />
           <TeamCard i={2} />
           <TeamCard i={3} />
+          <TeamCard i={4} />
         </div>
       </div>
     </div>

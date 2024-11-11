@@ -18,8 +18,8 @@ const Services = () => {
   }, [isInView, controls]);
   return (
     <>
-      <div className=" pt-20 px-40 hidden md:block relative w-fit">
-        <div className="w-full flex justify-center">
+      <div className=" pt-20 md:px-40 px-10   relative w-fit">
+        <div className="w-full flex  justify-center">
           <Image
             width={1000}
             height={1000}
@@ -38,26 +38,17 @@ const Services = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.75 }}
-          className=" absolute  top-[30%] group h-48 w-48 [perspective:1000px] "
+          className=" absolute home-service-container flex flex-col  top-[30%] group  "
         >
-          <div className="relative h-full w-full rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full object-cover "
-                alt="services background"
-                src="/assets/services/branding.svg"
-              />
+          <Image
+            width={200}
+            height={200}
+            className=" hover:scale-[1.1] transition-all duration-300"
+            alt="services background"
+            src="/assets/services/branding.svg"
+          />
 
-              <h4 className="services-title  transition-all duration-500 ease-in-out ">
-                Branding
-              </h4>
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
+          <h4 className="home-service-title ">Branding</h4>
         </motion.div>
 
         <motion.div
@@ -69,25 +60,18 @@ const Services = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.75 }}
-          className=" absolute  left-[28%] top-[15%] group h-48 w-48 [perspective:1000px] "
+          className=" absolute home-service-container left-[28%] top-[15%] group   "
         >
-          <div className="relative h-full w-full rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/digital-marketing.svg"
-              />
-              {/* <h4 className="services-title  transition-all duration-500 ease-in-out ">
+          <Image
+            width={200}
+            height={200}
+            className=" hover:scale-[1.1] transition-all duration-300"
+            alt="services background"
+            src="/assets/services/digital-marketing.svg"
+          />
+          {/* <h4 className="home-service-title ">
               Branding
             </h4> */}
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
@@ -99,25 +83,16 @@ const Services = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.75 }}
-          className=" absolute  left-[38%]  top-[55%] group h-[250px] w-[250px] perspective:1000px] "
+          className=" absolute home-service-container left-[38%]  top-[55%] group  "
         >
-          <div className="relative h-full w-full rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full gap-5 h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/tech-solutions.svg"
-              />
-              <h4 className="services-title   transition-all duration-500 ease-in-out ">
-                Tech Solutions
-              </h4>
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
+          <Image
+            width={250}
+            height={250}
+            className=" hover:scale-[1.1] transition-all duration-300"
+            alt="services background"
+            src="/assets/services/tech-solutions.svg"
+          />
+          <h4 className="home-service-title  ">Tech Solutions</h4>
         </motion.div>
 
         <motion.div
@@ -129,25 +104,18 @@ const Services = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.75 }}
-          className=" absolute  left-[18%]  top-[75%] group h-32 w-32 [perspective:1000px] "
+          className=" absolute home-service-container  left-[18%]  top-[75%] group  "
         >
-          <div className="relative h-full w-full rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/media-production.svg"
-              />
-              {/* <h4 className="services-title  transition-all duration-500 ease-in-out ">
+          <Image
+            width={150}
+            height={150}
+            className=" hover:scale-[1.1] transition-all duration-300"
+            alt="services background"
+            src="/assets/services/media-production.svg"
+          />
+          {/* <h4 className="home-service-title ">
               Branding
             </h4> */}
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
@@ -159,25 +127,18 @@ const Services = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.75 }}
-          className=" absolute  left-[55%]  top-[25%] group h-32 w-32 [perspective:1000px] "
+          className=" absolute home-service-container  left-[55%]  top-[25%] group  "
         >
-          <div className="relative h-full w-full rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/service-1.svg"
-              />
-              {/* <h4 className="services-title  transition-all duration-500 ease-in-out ">
+          <Image
+            width={150}
+            height={150}
+            className=" hover:scale-[1.1] transition-all duration-300"
+            alt="services background"
+            src="/assets/services/service-1.svg"
+          />
+          {/* <h4 className="home-service-title ">
               Branding
             </h4> */}
-            </div>
-            <div className="absoulte  flex items-center -mt-10   inset-0 h-full w-full rounded-full  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
@@ -189,25 +150,16 @@ const Services = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.75 }}
-          className=" absolute  left-[68%]  top-[75%] group h-40 w-40 [perspective:1000px] "
+          className=" absolute  home-service-container  left-[68%]  top-[75%] group  "
         >
-          <div className="relative h-full w-full rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/infographics.svg"
-              />
-              <h4 className="services-title   transition-all duration-500 ease-in-out ">
-                Inforgraphics Animation
-              </h4>
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
+          <Image
+            width={200}
+            height={200}
+            className=" hover:scale-[1.1] transition-all duration-300"
+            alt="services background"
+            src="/assets/services/infographics.svg"
+          />
+          <h4 className="home-service-title  ">Inforgraphics Animation</h4>
         </motion.div>
 
         <motion.div
@@ -219,170 +171,17 @@ const Services = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.75 }}
-          className=" absolute  left-[70%]  top-[20%]  group h-72 w-72 [perspective:1000px] "
+          className=" absolute md:max-w-full  max-w-[20%] flex flex-col items-center  left-[70%] w-fit  top-[20%]  group  "
         >
-          <div className="relative h-full w-full rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/creative-graphics-design.svg"
-              />
-              <h4 className="services-title  transition-all duration-500 ease-in-out ">
-                Creative Design
-              </h4>
-            </div>
-            <div className="absoulte flex items-center  rounded-xl  -mt-10  inset-0 h-full w-full  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
+          <Image
+            width={230}
+            height={230}
+            className=" hover:scale-[1.1] transition-all duration-300"
+            alt="services icon"
+            src="/assets/services/creative-graphics-design.svg"
+          />
+          <h4 className="home-service-title  ">Creative Design</h4>
         </motion.div>
-      </div>
-      {/* MOBILE START */}
-      {/* MOBILE START */}
-      {/* MOBILE START */}
-      <div className=" section-padding flex flex-col items-center  md:hidden  w-full">
-        <div className="  group w-full  flex justify-center  [perspective:1000px] ">
-          <div className="relative h-80 w-fit rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <img
-                width={1000}
-                height={1000}
-                className="w-full object-cover "
-                alt="services background"
-                src="/assets/services/branding.svg"
-              />
-              <h4 className="services-title  transition-all duration-500 ease-in-out ">
-                Branding
-              </h4>
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="  group w-full flex justify-center [perspective:1000px] ">
-          <div className="relative h-80 w-fit rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/digital-marketing.svg"
-              />
-              {/* <h4 className="services-title  transition-all duration-500 ease-in-out ">
-              Branding
-            </h4> */}
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="  flex justify-center group w-full perspective:1000px] ">
-          <div className="relative h-80 w-fit rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full gap-5 h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/tech-solutions.svg"
-              />
-              <h4 className="services-title   transition-all duration-500 ease-in-out ">
-                Tech Solutions
-              </h4>
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="  flex justify-center  group w-full [perspective:1000px] ">
-          <div className="relative h-80 w-fit rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/media-production.svg"
-              />
-              {/* <h4 className="services-title  transition-all duration-500 ease-in-out ">
-              Branding
-            </h4> */}
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="  flex justify-center group w-full [perspective:1000px] ">
-          <div className="relative h-80 w-fit rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/service-1.svg"
-              />
-              {/* <h4 className="services-title  transition-all duration-500 ease-in-out ">
-              Branding
-            </h4> */}
-            </div>
-            <div className="absoulte  flex items-center -mt-10   inset-0 h-full w-full rounded-full  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="  flex justify-center group w-full [perspective:1000px] ">
-          <div className="relative h-80 w-fit rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/infographics.svg"
-              />
-              <h4 className="services-title   transition-all duration-500 ease-in-out ">
-                Inforgraphics Animation
-              </h4>
-            </div>
-            <div className="absoulte flex items-center -mt-10  inset-0 h-full w-full rounded-xl  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="  flex justify-center group w-full [perspective:1000px] ">
-          <div className="relative h-80 w-fit rounded-xl transition-all duration-500  [transform-style:preserve-3d] group-hover:scale-[1.1] ">
-            <div className="absolute w-full h-full flex flex-col justify-center">
-              <Image
-                width={200}
-                height={200}
-                className="w-full "
-                alt="services background"
-                src="/assets/services/creative-graphics-design.svg"
-              />
-              <h4 className="services-title  transition-all duration-500 ease-in-out ">
-                Creative Design
-              </h4>
-            </div>
-            <div className="absoulte flex items-center  rounded-xl  -mt-10  inset-0 h-full w-full  px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-              <h5 className="-mt-10">Lorem Ipsum</h5>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );

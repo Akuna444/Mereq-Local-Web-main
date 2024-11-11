@@ -19,9 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} bg-black  overflow-x-hidden `}>
+      <body
+        className={`${poppins.className} bg-white dark:bg-black  overflow-x-hidden `}
+      >
         <ThemeProviders>
-          <DarkModeToggle />
           <Cursor />
           <NavBar />
           {children}

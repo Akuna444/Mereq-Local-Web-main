@@ -17,24 +17,29 @@ const Partners = ({ padding = true }) => {
           src="/assets/gradients/gradient-v-3.png"
           className="w-full h-full"
           alt="gradient"
-          height={1000}
-          width={800}
+          height={1600}
+          width={1400}
         />
       </div>
-      <div className="flex py-3 justify-center md:justify-between w-full">
+      <div
+        className={`flex py-3 md:justify-between  ${
+          padding ? "justify-center" : ""
+        } w-full `}
+      >
         <Reveal>
-          <h3 className="text-tertiary text-center md:text-left">Trusted By</h3>
+          <h3 className="text-tertiary ">Trusted By</h3>
         </Reveal>
       </div>
       <div>
-        <div className="w-full flex-col rounded-xl p-20 gap-20 flex bg-grayDark/50">
+        <div className="w-full items-end  flex-col rounded-xl p-5 gap-5 md:p-20 md:gap-20 flex bg-grayDark/50">
           <Swiper
             modules={[Autoplay]}
             spaceBetween={50}
             breakpoints={{
               576: {
                 // width: 576,
-                slidesPerView: 1,
+                slidesPerView: 3,
+                reverseDirection: true,
               },
               768: {
                 // width: 768,
@@ -42,8 +47,6 @@ const Partners = ({ padding = true }) => {
               },
             }}
             loop={true}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
             autoplay={{
               delay: 2000,
               disableOnInteraction: true,
@@ -54,7 +57,9 @@ const Partners = ({ padding = true }) => {
               return (
                 <SwiperSlide key={partner.id}>
                   <div className=" w-[100px] h-[100px]" key={partner.id}>
-                    <img
+                    <Image
+                      width={100}
+                      height={100}
                       className="w-full h-full"
                       src={`/assets/partners/${partner.logo}.png`}
                       alt={partner.name}
@@ -66,20 +71,19 @@ const Partners = ({ padding = true }) => {
           </Swiper>
           <Swiper
             modules={[Autoplay]}
-            spaceBetween={50}
             breakpoints={{
               576: {
                 // width: 576,
-                slidesPerView: 1,
+                slidesPerView: 3,
+                spaceBetween: 10,
               },
               768: {
                 // width: 768,
+                spaceBetween: 50,
                 slidesPerView: 6,
               },
             }}
             loop={true}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
             autoplay={{
               delay: 2000,
               disableOnInteraction: true,
@@ -90,8 +94,13 @@ const Partners = ({ padding = true }) => {
             {partnersList.map((partner) => {
               return (
                 <SwiperSlide key={partner.id}>
-                  <div className=" w-[100px] h-[100px]" key={partner.id}>
-                    <img
+                  <div
+                    className=" max-w-[100px] nax-h-[100px]"
+                    key={partner.id}
+                  >
+                    <Image
+                      width={100}
+                      height={100}
                       className="w-full h-full"
                       src={`/assets/partners/${partner.logo}.png`}
                       alt={partner.name}

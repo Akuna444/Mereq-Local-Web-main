@@ -3,28 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../UI/Animations/Reveal";
 
-const PostsCard = () => {
+const PostsCard = ({ title, id, content, featuredImage }) => {
   return (
-    <Link href="#">
+    <Link href={`/blog/${id}`}>
       <div className="w-full text-white group  h-[300px]">
-        <div className="overflow-hidden w-full rounded-xl">
+        <div className="overflow-hidden h-full w-full rounded-xl">
           <Image
             width={300}
             height={300}
             className="object-cover w-full group-hover:scale-110 transition-all duration-300 "
-            src="/assets/posts/post-1.png"
-            alt="post thumbnail"
+            src={`http://209.250.233.239${featuredImage?.url}`}
+            alt={featuredImage?.name}
           />
         </div>
 
         <Reveal>
-          <p className="text-[14px] text-tertiary">Lorem ipsum</p>
+          <p className="text-[14px] text-tertiary">{title}</p>
         </Reveal>
         <Reveal>
           {" "}
           <p className="text-[16px] break-words leading-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            architecto?
+            {content.slice(0, 100)}
           </p>
         </Reveal>
       </div>

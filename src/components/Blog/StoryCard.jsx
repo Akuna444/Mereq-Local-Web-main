@@ -1,36 +1,40 @@
+"use client";
+
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Reveal from "../UI/Animations/Reveal";
 
-const StoryCard = () => {
+const StoryCard = ({ title, author, date, content, featuredImage, id }) => {
   return (
-    <div className="section-padding grid gap-10 grid-cols-2">
-      <Image
-        width={400}
-        height={400}
-        className="w-full h-[350px] object-cover rounded-[20px]"
-        src="/assets/posts/1x/post-2.png"
-        alt="post thumb"
-      />
-      <div className="flex flex-col gap-10 justify-center h-full">
-        <div>
-          <h2 className="text-tertiary font-bold">in vonaputate</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi
-            quas architecto eum optio illum nesciunt, odit velit harum nulla
-            nisi minima, facilis reprehenderit. Sunt magni quo fugiat architecto
-            ex aperiam itaque? Nesciunt laudantium tempore, repellat tempora
-            voluptatum illum delectus?
-          </p>
-        </div>
+    <Reveal width="100%">
+      <div className="section-paddingx w-full grid gap-5 md:gap-10 grid-cols-1 md:grid-cols-2">
+        <Image
+          width={400}
+          height={400}
+          className="w-full h-[200px] md:h-[350px] object-cover rounded-[20px]"
+          src={`http://209.250.233.239${featuredImage?.url}`}
+          alt="post thumb"
+        />
+        <div className="flex flex-col gap-5 justify-center h-full">
+          <div>
+            <h2 className="text-tertiary  font-bold">{title}</h2>
+            <div className="py-4">
+              <h5 className="text-secondary ">{author}</h5>
+              <h5 className="text-secondary  ">{date}</h5>
+            </div>
 
-        <Link href="/blog/1">
-          <button className="flex justify-between  w-72 text-3xl  px-2 h-fit items-center rounded-[20px] bg-tertiary">
-            Read More <ChevronRight size={50} />
-          </button>{" "}
-        </Link>
-      </div>
-    </div>
+            <p className="">{content.slice(0, 200)}</p>
+          </div>
+
+          <Link href={`/blog/${id}`}>
+            <button className="flex justify-between md:mx-0 py-1  w-52 md:w-72 text-xl md:text-3xl  px-2 h-fit items-center rounded-[20px] bg-tertiary">
+              Read More <ChevronRight size={30} />
+            </button>
+          </Link>
+        </div>
+      </div>{" "}
+    </Reveal>
   );
 };
 

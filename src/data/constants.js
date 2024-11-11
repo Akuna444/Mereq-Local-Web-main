@@ -1,4 +1,5 @@
 export const navBarList = [
+  { id: 0, name: "Home", link: "/" },
   { id: 1, name: "About Us", link: "/about" },
   {
     id: 2,
@@ -8,6 +9,54 @@ export const navBarList = [
   { id: 3, name: "Contact", link: "/contact" },
   { id: 4, name: "Services", link: "/services" },
   { id: 5, name: "Blog", link: "/blog" },
+];
+
+export const projectsList = [
+  {
+    id: 1,
+    name: "Feres",
+    imagePath: "feres",
+    col: "md:col-span-4",
+    row: "md:row-span-4",
+    category: "Digital Marketing",
+    link: "feres",
+  },
+  {
+    id: 2,
+    name: "Sunpic",
+    imagePath: "sunpic",
+    col: "md:col-span-2",
+    row: "md:row-span-6",
+    category: "Website",
+    link: "sunpic",
+  },
+  {
+    id: 3,
+    name: "Efoy",
+    imagePath: "efoy",
+    col: "md:col-span-2",
+    row: "md:row-span-2",
+    category: "Branding",
+    link: "efoy",
+  },
+  {
+    id: 4,
+    name: "Smile",
+    imagePath: "smile",
+    col: "md:col-span-2",
+    row: "md:row-span-2",
+    category: "Website",
+    link: "smile",
+  },
+  {
+    id: 5,
+    name: "Kacha",
+    imagePath: "kacha",
+    col: "md:col-span-5",
+    row: "md:row-span-2",
+    category: "Branding",
+    link: "kacha",
+  },
 ];
 
 export const partnersList = [

@@ -12,8 +12,8 @@ const Hero = () => {
           src="/assets/gradients/gradient-v-1.png"
           className="w-full h-full"
           alt="gradient"
-          height={700}
-          width={900}
+          height={1200}
+          width={1400}
         />
       </div>
       <div className="  opacity-50 dark:opacity-100 absolute   right-[0] w-[900px] h-[700px] top-[35%] z-[-1] ">
@@ -21,13 +21,13 @@ const Hero = () => {
           src="/assets/gradients/gradient-v-2.png"
           className="w-full h-full"
           alt="gradient"
-          height={700}
-          width={900}
+          height={1100}
+          width={1200}
         />
       </div>
 
-      <div className="grid grid-cols-1  gap-12 md:grid-cols-2 ">
-        <div className="flex flex-col gap-6 md:gap-16 h-full justify-center">
+      <div className="grid grid-cols-1 max-w-screen-2xl mx-auto inset-0 gap-12 md:grid-cols-2 ">
+        <div className="flex flex-col   gap-6 md:gap-16 h-full justify-center">
           <div className="flex flex-col  items-center md:items-start gap-2">
             <Reveal>
               <h1 className="font-bold text-black dark:text-white text-center md:text-left">

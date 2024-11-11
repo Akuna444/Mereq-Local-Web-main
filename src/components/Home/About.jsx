@@ -18,16 +18,17 @@ const About = () => {
         <div className="col-span-4">
           <Reveal>
             <p className="dark:text-white text-dark text-center md:text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic
-              consequatur nisi nulla assumenda perferendis itaque fugiat
-              aspernatur dignissimos repellendus maiores expedita.
+              Based in Addis Ababa, Ethiopia, MereqTech is an advertising and
+              technology agency. Specializing in digital marketing, social media
+              management, and software development, we offer comprehensive
+              solutions to meet diverse needs.
             </p>{" "}
           </Reveal>
           <Reveal>
             <p className="dark:text-white text-dark text-center md:text-left">
-              dolorum corrupti, sunt modi. Saepe asperiores quaerat laboriosam
-              voluptate. Cumque et amet at doloribus pariatur aperiam a
-              consequuntur.
+              Our unique blend of creativity and technical expertise makes us
+              the top choice for clients seeking innovative strategies and
+              technological solutions.
             </p>{" "}
           </Reveal>
         </div>

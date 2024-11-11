@@ -11,15 +11,14 @@ const Contact = () => {
       <div className="w-full md:px-20 flex flex-col">
         <Reveal>
           <h2 className="dark:text-secondary text-center md:text-left text-primary mb-5 font-bold">
-            Start with Free marketing consultation
+            Get free Marketing Consultation
           </h2>
         </Reveal>
 
         <h4 className="dark:text-white md:text-left text-center  text-black w-full md:w-[60%]">
           <Reveal>
             {" "}
-            Fill out the following form below and we will call you to schedule a
-            consultation
+            Fill out the following form and we will contact you soon
           </Reveal>
         </h4>
 
@@ -62,9 +61,9 @@ const Contact = () => {
             <Reveal>
               <button
                 type="submit"
-                className="dark:bg-[#146154]   bg-secondary bg-opacity-70 dark:bg-opacity-100 hover:dark:bg-[#146154]/80 hover:bg-secondary/80 shadow-glow border-gray-300 border-2 rounded-[20px]  w-fit  py-3 px-10"
+                className="dark:bg-[#146154]   bg-secondary bg-opacity-70 dark:bg-opacity-100 hover:dark:bg-[#146154]/80 hover:bg-secondary/80 shadow-glow border-gray-300 border-2 rounded-[20px]  w-fit  md:py-3 px-5 py-1 md:px-10"
               >
-                <h5 className="font-semibold">Request FREE Consultation</h5>
+                <h6 className="font-semibold md:text-xl text-lg">Request</h6>
               </button>
             </Reveal>
           </div>
@@ -74,9 +73,9 @@ const Contact = () => {
             </Reveal>
             <Reveal>
               <p>
-                Read more about how we use private data in
+                Read more about how we use private data in <br />
                 <a href="#" className="text-tertiary">
-                  &nbsp;Privacy and Policy
+                  Privacy and Policy
                 </a>
               </p>{" "}
             </Reveal>

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const ProjectDetailText = () => {
   return (
-    <div className='section-padding'>
-        <h2 className="text-tertiary">Lorem Ipsum</h2>
-      <p className="text-[23px]">
+    <div className="section-padding">
+      <h2 className="text-tertiary center-text">Lorem Ipsum</h2>
+      <p className="text-[23px] center-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
         voluptatum cumque labore temporibus rerum, recusandae quo mollitia vel
         eaque totam exercitationem autem aut dolor necessitatibus, dolorum
@@ -14,7 +14,7 @@ const ProjectDetailText = () => {
         Accusantium fuga in saepe pariatur magnam, assumenda vero voluptates.
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectDetailText
+export default ProjectDetailText;
