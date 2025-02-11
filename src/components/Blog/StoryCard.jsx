@@ -13,7 +13,7 @@ const StoryCard = ({ title, author, date, content, featuredImage, id }) => {
           width={400}
           height={400}
           className="w-full h-[200px] md:h-[350px] object-cover rounded-[20px]"
-          src={`http://209.250.233.239${featuredImage?.url}`}
+          src={`http://209.250.233.239:1337${featuredImage?.url}`}
           alt="post thumb"
         />
         <div className="flex flex-col gap-5 justify-center h-full">

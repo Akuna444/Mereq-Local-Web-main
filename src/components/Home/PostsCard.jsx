@@ -12,7 +12,7 @@ const PostsCard = ({ title, id, content, featuredImage }) => {
             width={300}
             height={300}
             className="object-cover w-full group-hover:scale-110 transition-all duration-300 "
-            src={`http://209.250.233.239${featuredImage?.url}`}
+            src={`http://209.250.233.239:1337${featuredImage?.url}`}
             alt={featuredImage?.name}
           />
         </div>

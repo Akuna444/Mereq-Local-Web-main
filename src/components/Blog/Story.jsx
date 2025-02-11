@@ -17,7 +17,7 @@ const Story = async () => {
           <div className="section-padding">
             <div className="grid grid-cols-1 md:grid-cols-2 relative h-[60vh] md:h-[80vh] rounded-[20px] overflow-hidden bg-secondary">
               <Image
-                src={`http://209.250.233.239${topBlog.attributes.featuredImage.data.attributes.url}`}
+                src={`http://209.250.233.239:1337${topBlog.attributes.featuredImage.data.attributes.url}`}
                 alt="top story thumbnail"
                 className="w-full md:h-full h-[200px]  object-cover"
                 width={400}

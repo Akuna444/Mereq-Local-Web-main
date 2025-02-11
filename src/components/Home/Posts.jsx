@@ -47,7 +47,7 @@ const Posts = async () => {
                   title={blog.attributes.title}
                   key={blog.id}
                   content={blog.attributes.content}
-                  featuredImage={blog.attributes.featuredImage.data.attributes}
+                  featuredImage={blog?.attributes?.featuredImage?.data?.attributes}
                   id={blog.id}
                 />
               );

@@ -9,7 +9,7 @@ const Hero = ({ title, content, author, date, featuredImage }) => {
   return (
     <div className=" relative flex  bg-black w-full p-3 h-[60vh] md:h-[80vh]">
       <Image
-        src={`http://209.250.233.239${featuredImage.url}`}
+        src={`http://209.250.233.239:1337${featuredImage.url}`}
         className="w-full h-full rounded-[20px] opacity-60  object-cover"
         alt={featuredImage?.name}
         width={800}

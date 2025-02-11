@@ -3,7 +3,7 @@
 export const fetchBlogs = async () => {
   try {
     const res = await fetch(
-      `http://209.250.233.239/api/blogs?populate=*&sort=createdAt:desc`,
+      `http://209.250.233.239:1337/api/blogs?populate=*&sort=createdAt:desc`,
       {
         method: "GET",
         cache: "no-store",
@@ -19,7 +19,7 @@ export const fetchBlogs = async () => {
 export const fetchBlog = async (id) => {
   try {
     const res = await fetch(
-      `http://209.250.233.239/api/blogs/${id}?populate=*`,
+      `http://209.250.233.239:1337/api/blogs/${id}?populate=*`,
       {
         cache: "no-store",
       }
