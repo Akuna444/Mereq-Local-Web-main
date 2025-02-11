@@ -81,7 +81,7 @@ const ProjectsList = () => {
                     <Link href={`projects/${project.link}`}>
                       <Image
                         className="projects-image   "
-                        src={`/assets/banners/${project.imagePath}.png `}
+                        src={`/assets/banners/${project.imagePath} `}
                         alt={`${project.imagePath}-banner`}
                         width={400}
                         height={400}

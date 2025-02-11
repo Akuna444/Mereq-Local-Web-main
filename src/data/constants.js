@@ -15,7 +15,7 @@ export const projectsList = [
   {
     id: 1,
     name: "Feres",
-    imagePath: "feres",
+    imagePath: "feres.png",
     col: "md:col-span-4",
     row: "md:row-span-4",
     category: "Digital Marketing",
@@ -24,7 +24,7 @@ export const projectsList = [
   {
     id: 2,
     name: "Sunpic",
-    imagePath: "sunpic",
+    imagePath: "sunpic.png",
     col: "md:col-span-2",
     row: "md:row-span-6",
     category: "Website",
@@ -33,7 +33,7 @@ export const projectsList = [
   {
     id: 3,
     name: "Efoy",
-    imagePath: "efoy",
+    imagePath: "efoy.png",
     col: "md:col-span-2",
     row: "md:row-span-2",
     category: "Branding",
@@ -42,7 +42,7 @@ export const projectsList = [
   {
     id: 4,
     name: "Smile",
-    imagePath: "smile",
+    imagePath: "smile.png",
     col: "md:col-span-2",
     row: "md:row-span-2",
     category: "Website",
@@ -51,7 +51,7 @@ export const projectsList = [
   {
     id: 5,
     name: "Kacha",
-    imagePath: "kacha",
+    imagePath: "kacha.png",
     col: "md:col-span-5",
     row: "md:row-span-2",
     category: "Branding",
