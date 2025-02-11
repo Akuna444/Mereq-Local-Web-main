@@ -80,11 +80,12 @@ const ProjectsList = () => {
                   >
                     <Link href={`projects/${project.link}`}>
                       <Image
-                        className="projects-image   "
-                        src={`/assets/banners/${project.imagePath} `}
-                        alt={`${project.imagePath}-banner`}
+                        className="projects-image "
                         width={400}
                         height={400}
+                        src={`/assets/banners/${project.imagePath}`}
+                        alt={`${project.imagePath}-banner`}
+                        
                       />
                     </Link>
                     <h4 className="projects-text">{project.name}</h4>
