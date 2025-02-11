@@ -19,7 +19,7 @@ const Story = async () => {
               <Image
                 src={`http://209.250.233.239:1337${topBlog.attributes.featuredImage.data.attributes.url}`}
                 alt="top story thumbnail"
-                className="w-full md:h-full h-[200px]  object-cover"
+                className="w-full md:h-[80vh] h-[200px]  object-cover"
                 width={400}
                 height={400}
               />
