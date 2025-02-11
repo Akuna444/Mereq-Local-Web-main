@@ -7,6 +7,12 @@ const nextConfig = {
         port: "1337",
         pathname: "/**",
       },
+      {
+        protocol: "http",
+        hostname: "mereq-tech.vercel.app",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
