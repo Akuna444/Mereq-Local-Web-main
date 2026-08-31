@@ -8,11 +8,11 @@ import Link from "next/link";
 
 const Story = async () => {
   const blogsData = await fetchBlogs();
-  const topBlog = blogsData[0];
+  const topBlog = blogsData?.[0];
 
   return (
     <>
-      {blogsData ? (
+      {topBlog ? (
         <>
           <div className="section-padding">
             <div className="grid grid-cols-1 md:grid-cols-2 relative h-[60vh] md:h-[80vh] rounded-[20px] overflow-hidden bg-secondary">
